@@ -1,29 +1,3 @@
-body {
-    background-color: lightcyan;
-    font-family: sans-serif;
-}
-
-h1, h2 {
-    color:white;
-    border-style: solid;
-    border-color: pink;
-    border-width: 2px;
-    background-color: pink;
-}
-
-table {
-    text-align: center;
-}
-
-h3 {
-    color:pink;
-}
-
-.navbar {
-    
-}
-
-
 /* ========== Global Styles ========== */
 :root {
     --bg-color: #fdf6f0;      /* soft beige */
@@ -158,5 +132,47 @@ h3 {
       display: inline-block;
       margin: 0.5rem;
     }
+  }
+  
+  /* ========== About Page Table & Extra Styling ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #fffaf7;
+    border: 1px solid #f0dcd7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #f3e2df;
+  }
+  
+  th {
+    background-color: #f8c8c4;
+    color: #4b3f39;
+  }
+  
+  td {
+    background-color: #fffdfb;
+  }
+  
+  /* Book Titles */
+  h3 {
+    color: #a86b65;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Image Responsiveness */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 1rem;
   }
   
