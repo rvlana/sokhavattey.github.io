@@ -22,3 +22,141 @@ h3 {
 .navbar {
     
 }
+
+
+/* ========== Global Styles ========== */
+:root {
+    --bg-color: #fdf6f0;      /* soft beige */
+    --text-color: #4b3f39;    /* warm brown-gray */
+    --accent-color: #f8c8c4;  /* soft pastel pink */
+    --link-color: #d48c86;    /* dusty rose */
+    --font-family: 'Georgia', serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ========== Header ========== */
+  header {
+    background-color: var(--accent-color);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  header p {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #6a4c49;
+  }
+  nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  /* ========== Main Content ========== */
+  main {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #3d2c28;
+  }
+  ul {
+    padding-left: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ========== Blog Posts ========== */
+  article {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #e4c9c6;
+  }
+  article h2 {
+    margin: 0;
+  }
+  .date {
+    font-size: 0.9rem;
+    color: #a28b85;
+  }
+  
+  /* ========== Form ========== */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="text"],
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    border: 1px solid #d9b6b3;
+    border-radius: 6px;
+    background-color: #fff8f5;
+  }
+  input[type="submit"] {
+    background-color: var(--link-color);
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #b8726d;
+  }
+  
+  /* ========== Footer ========== */
+  footer {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #4b3f39;
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+  }
+  
